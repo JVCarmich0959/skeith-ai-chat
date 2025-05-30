@@ -1,0 +1,2 @@
+#Simple React Vite Template
+

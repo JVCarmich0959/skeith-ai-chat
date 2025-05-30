@@ -1,0 +1,98 @@
+.addUser {
+  width: max-content;
+  height: max-content;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffe6f0, #e0f0ff);
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+  border: 2px dashed #ffc1e3;
+
+  form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    input {
+      padding: 16px 20px;
+      border-radius: 16px;
+      border: 2px solid #ffd6e6;
+      outline: none;
+      background-color: #fff0fa;
+      color: #4d4d4d;
+      font-size: 16px;
+      transition: all 0.3s ease;
+
+      &::placeholder {
+        color: #a89fa5;
+      }
+
+      &:focus {
+        border-color: #ff8bcf;
+        box-shadow: 0 0 10px #ffbae9;
+      }
+    }
+
+    button {
+      padding: 16px 24px;
+      border-radius: 16px;
+      background: linear-gradient(to right, #ffa6d4, #c7dfff);
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .user {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px dashed #ffc4ec;
+
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffbde6;
+        box-shadow: 0 0 10px rgba(255, 182, 193, 0.2);
+      }
+    }
+
+    button {
+      padding: 12px 18px;
+      border-radius: 16px;
+      background: linear-gradient(to right, #f7a6ff, #b3dcff);
+      color: white;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #ffc1e3, #d8ecff);
+      }
+    }
+  }
+}
